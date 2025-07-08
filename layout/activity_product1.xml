@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".product1">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomnav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/white"
+        app:itemIconTint="@color/black"
+        app:itemTextColor="@color/black"
+        app:menu="@menu/menu"
+        tools:ignore="VisualLintBottomNav" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomnav"
+        android:layout_marginBottom="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/productback1"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="17dp"
+                android:contentDescription="@string/kembali"
+                android:src="@drawable/arrow_circle_left"
+                tools:ignore="ContentDescription,DuplicateIds,RtlHardcoded" />
+
+
+            <TextView
+                android:id="@+id/title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Fashion And Flacko"
+                android:textColor="#FAE55B"
+                android:textSize="13pt"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,TextContrastCheck" />
+
+
+            <ImageView
+                android:id="@+id/menu"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/baseline_menu_24"
+                tools:ignore="ContentDescription,RtlHardcoded" />
+
+
+            <FrameLayout
+                android:id="@+id/productdetail1"
+                android:layout_width="400dp"
+                android:layout_height="300dp"
+                android:layout_below="@id/title2"
+                android:layout_margin="16dp"
+
+                >
+
+                <ImageView
+                    android:id="@+id/framedetail1"
+                    android:layout_width="370dp"
+                    android:layout_height="268dp"
+                    android:layout_gravity="center"
+                    android:layout_marginVertical="40dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/productdetail1">
+
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/detailImage1"
+                    android:layout_width="260dp"
+                    android:layout_height="255dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/volunteer" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/detailproductname1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="365dp"
+                android:text="Volunteer\nJacket"
+                android:textSize="12pt">
+
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/productprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="400dp"
+                android:layout_marginRight="20dp"
+                android:text="Rp.600rb"
+                android:textSize="9pt"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/description1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/productprice"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:text="Varsity Jacket yang sangat fleksibel dipakai untuk casual-look ataupun sportstyle-look. Untuk sportstyle-look, bisa kamu kombinasikan dengan jogger pants dan sneakers dari FASHION AND FLACKO. Dapatkan tampilan terbaikmu dengan Voulteer Varsity Jacket"
+                android:textSize="8pt"
+                android:textStyle="bold">
+            </TextView>
+
+
+            <ImageView
+                android:id="@+id/deliverylogo"
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:src="@drawable/baseline_delivery_dining_24"
+                android:layout_below="@id/description1"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="20dp">
+            </ImageView>
+
+
+            <TextView
+                android:id="@+id/freedelivery1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/deliverylogo"
+                android:layout_below="@id/description1"
+                android:layout_marginTop="29dp"
+                android:text="Free Delivery"
+                android:textSize="15sp"
+                android:textStyle="bold">
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/ratingreview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Rating &amp; Reviews"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/freedelivery1"
+                android:layout_marginTop="34dp"
+                android:layout_marginLeft="22dp">
+            </TextView>
+
+
+            <ImageView
+                android:id="@+id/star"
+                android:layout_width="186dp"
+                android:layout_height="100dp"
+                android:src="@drawable/star"
+                android:layout_marginTop="680dp"
+                android:layout_marginLeft="27dp">
+            </ImageView>
+
+            <Button
+                android:id="@+id/buynow"
+                android:layout_width="118dp"
+                android:layout_height="match_parent"
+                android:text="Buy Now"
+                android:textSize="15sp"
+                android:backgroundTint="@color/black"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="615dp"
+                android:layout_marginRight="20dp">
+            </Button>
+
+            <Button
+                android:id="@+id/addtobag"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:text="+add to bag"
+                android:textSize="15sp"
+                android:backgroundTint="@color/black"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/buynow"
+                android:layout_marginRight="20dp">
+            </Button>
+
+            <TextView
+                android:id="@+id/selectsize"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Select Size"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_below="@id/star"
+                android:layout_marginLeft="20dp">
+            </TextView>
+
+
+
+            <!-- ToggleButton for Size M -->
+            <ToggleButton
+                android:id="@+id/toggle_size_m"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:textOn="M"
+                android:textOff="M"
+                android:textColor="@color/white"
+                android:background="@drawable/toggle_selector"
+                android:layout_below="@id/selectsize"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp" />
+
+            <!-- ToggleButton for Size L -->
+            <ToggleButton
+                android:id="@+id/toggle_size_l"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:textOn="L"
+                android:textOff="L"
+                android:textColor="@color/white"
+                android:background="@drawable/toggle_selector"
+                android:layout_below="@id/selectsize"
+                android:layout_toRightOf="@id/toggle_size_m"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp" />
+
+            <!-- ToggleButton for Size XL -->
+            <ToggleButton
+                android:id="@+id/toggle_size_xl"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:textOn="XL"
+                android:textColor="@color/white"
+                android:textOff="XL"
+                android:background="@drawable/toggle_selector"
+                android:layout_below="@id/selectsize"
+                android:layout_toRightOf="@id/toggle_size_l"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

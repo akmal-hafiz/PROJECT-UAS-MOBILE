@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signup">
+
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:contentDescription="background"
+        android:src="@drawable/coversf"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Fashion And Flacko"
+        android:textColor="#FAE55B"
+        android:layout_marginTop="175dp"
+        android:textSize="14pt"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2mm"
+        android:layout_marginTop="88mm"
+        android:text="Sign in"
+        android:textColor="#3F80A8"
+        android:textSize="12pt"
+        android:textStyle="bold"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="88mm"
+        android:text="Sign Up"
+        android:textColor="#3F80A8"
+        android:textSize="12pt"
+        android:textStyle="bold"
+        tools:ignore="TextSizeCheck" />
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/login"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:layout_below="@id/title"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Login Title -->
+            <TextView
+                android:id="@+id/LOGIN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="16dp"
+                android:text="Sign-up"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <!-- Username Field -->
+            <EditText
+                android:id="@+id/emailup"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Email"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColorHint="#757575" />
+
+            <EditText
+                android:id="@+id/Usernameup"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:autofillHints=":"
+                android:hint="Username"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColorHint="#757575" />
+
+
+            <EditText
+                android:id="@+id/passwordup"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:imeOptions="actionDone"
+                android:padding="10dp"
+                android:textColorHint="#757575">
+
+            </EditText>
+
+
+            <!-- Button -->
+            <Button
+                android:id="@+id/Signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#000000"
+                android:src="@drawable/h_m_lanciert_eigene_unisex_kollektion"
+                android:text="Sign-up"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText,SpUsage" />
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
+
